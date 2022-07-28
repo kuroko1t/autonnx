@@ -1,6 +1,7 @@
-import torch
-import re
 import logging
+import re
+
+import torch
 from rich.logging import RichHandler
 
 logging.basicConfig(
