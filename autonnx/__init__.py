@@ -17,7 +17,7 @@ log = logging.getLogger("autonnx")
 def convert(model, opset=None, shape=[1, 3, 32, 32]):
     model_name = type(model).__name__.lower()
     dummy_input = torch.randn(*shape)
-    for i in range(3):
+    for i in range(5):
         log.info(f"shape={shape}")
         try:
             torch.onnx.export(
